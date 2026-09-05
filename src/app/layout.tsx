@@ -8,6 +8,7 @@ import "./home-refine.css";
 import "./scroll-reveal.css";
 import "./floating-enquiry.css";
 import "./floating-color-fix.css";
+import "./mobile.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { MobileActions } from "@/components/mobile-actions";

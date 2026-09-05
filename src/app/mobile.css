@@ -1,0 +1,37 @@
+html,body{max-width:100%;overflow-x:clip}
+@media(max-width:767px){
+  .container{width:calc(100% - 28px)}
+  header .container{height:72px}
+  .home-page .grain{min-height:92svh}
+  .home-page .grain .container{padding-top:112px;padding-bottom:28px}
+  .home-page .grain h1{font-size:clamp(2.65rem,12.5vw,3.6rem);line-height:1.02;letter-spacing:-.055em}
+  .home-page .grain p[class*="text-base"]{font-size:15px;line-height:1.65}
+  .home-page .grain a{min-height:50px}
+  .section{padding-block:64px}
+  .section .display{overflow-wrap:break-word}
+  .section h2.display{font-size:clamp(2.15rem,10vw,3rem);line-height:1.03}
+  .home-page .section:nth-of-type(3) .grid{gap:36px}
+  .home-page .section:nth-of-type(3) [class*="aspect-"]{aspect-ratio:4/3}
+  .home-page a.group{min-height:0!important;padding:24px}
+  .home-page a.group h3{font-size:1.65rem}
+  .home-page .section [class*="mt-24"],.home-page .section [class*="mt-20"]{margin-top:28px!important}
+  .home-page .section [class*="mt-12"],.home-page .section [class*="mt-14"]{margin-top:24px!important}
+  .home-page section[class*="bg-[#b89762]"]{padding-block:60px}
+  .home-page section[class*="bg-[#b89762]"] h2{font-size:2.8rem}
+  .home-page section[class*="bg-[#b89762]"] a{width:100%;justify-content:center}
+  main header[class*="pt-40"]{padding-top:118px;padding-bottom:56px}
+  main header[class*="pt-40"] .mb-16{margin-bottom:40px}
+  main header[class*="pt-40"] h1{font-size:clamp(2.6rem,12vw,3.7rem)}
+  main header[class*="pt-40"] p[class*="text-lg"]{font-size:16px;line-height:1.7}
+  form{grid-template-columns:minmax(0,1fr)!important}
+  form label,form button{grid-column:1!important}
+  input,textarea,select{width:100%;min-width:0;font-size:16px!important}
+  iframe{min-height:280px}
+  footer .container>div:first-child{gap:42px}
+  footer .grid-cols-2{grid-template-columns:1fr 1fr}
+  .floating-enquiry{bottom:92px;right:12px;padding:11px!important}
+  .floating-enquiry>span:nth-child(2),.floating-enquiry>svg{display:none}
+  aside[aria-label="Quick contact"]{bottom:max(10px,env(safe-area-inset-bottom));left:10px;right:10px}
+}
+@media(min-width:768px) and (max-width:1023px){.container{width:calc(100% - 48px)}.section{padding-block:82px}main header[class*="pt-40"] h1{font-size:4.5rem}.home-page a.group{min-height:230px}}
+@media(max-width:390px){.home-page .grain h1{font-size:2.55rem}.home-page .grain .mt-9{margin-top:24px}.home-page .grain a{width:100%;justify-content:center}footer .grid-cols-2{grid-template-columns:1fr}}
