@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function Logo({light=false}:{light?:boolean}){return <Link href="/" aria-label="Techno Group home" className="focus-ring inline-flex items-center gap-3"><span className={`grid size-9 place-items-center border text-sm font-bold ${light?"border-white/35 text-white":"border-black text-black"}`}>T</span><span className="leading-none"><b className="font-[Manrope] text-[15px] tracking-[.08em]">TECHNO</b><small className="mt-1 block text-[8px] tracking-[.29em] opacity-60">GROUP</small></span></Link>}

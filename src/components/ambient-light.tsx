@@ -1,0 +1,3 @@
+"use client";
+import{motion,useMotionValue,useSpring}from"framer-motion";import{useEffect}from"react";
+export function AmbientLight(){const x=useMotionValue(-300),y=useMotionValue(-300);const sx=useSpring(x,{stiffness:120,damping:25}),sy=useSpring(y,{stiffness:120,damping:25});useEffect(()=>{const move=(e:PointerEvent)=>{x.set(e.clientX-180);y.set(e.clientY-180)};addEventListener("pointermove",move,{passive:true});return()=>removeEventListener("pointermove",move)},[x,y]);return <motion.div aria-hidden style={{x:sx,y:sy}} className="pointer-events-none fixed left-0 top-0 z-[45] hidden size-[360px] rounded-full bg-[radial-gradient(circle,rgba(184,151,98,.08),transparent_68%)] mix-blend-multiply lg:block"/>}

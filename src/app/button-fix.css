@@ -1,0 +1,20 @@
+/* Explicit contrast guards for light CTAs. These override inherited section colors. */
+.grain a.bg-white,
+header a.bg-white,
+a.bg-white.text-black {
+  background-color: #fff !important;
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+}
+.grain a.bg-white:hover,
+header a.bg-white:hover,
+a.bg-white.text-black:hover {
+  background-color: #eee9df !important;
+  color: #111 !important;
+}
+a.bg-black.text-white,
+header a.bg-black {
+  background-color: #111 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
