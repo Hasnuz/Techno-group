@@ -1,0 +1,4 @@
+import{Schema,model,models}from"mongoose";
+export interface QuoteRecord{name:string;phone:string;whatsapp?:string;email?:string;location?:string;requirement:string;message?:string;status:"new"|"contacted"|"closed";createdAt:Date}
+const QuoteSchema=new Schema<QuoteRecord>({name:{type:String,required:true,trim:true,maxlength:100},phone:{type:String,required:true,trim:true,maxlength:30},whatsapp:{type:String,trim:true,maxlength:30},email:{type:String,trim:true,lowercase:true,maxlength:160},location:{type:String,trim:true,maxlength:160},requirement:{type:String,required:true,trim:true,maxlength:200},message:{type:String,trim:true,maxlength:2000},status:{type:String,enum:["new","contacted","closed"],default:"new"}},{timestamps:true});
+export const Quote=models.Quote||model<QuoteRecord>("Quote",QuoteSchema);
